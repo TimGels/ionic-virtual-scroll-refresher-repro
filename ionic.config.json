@@ -1,0 +1,7 @@
+{
+  "name": "ionic-refresher-virtual-scroll-repro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

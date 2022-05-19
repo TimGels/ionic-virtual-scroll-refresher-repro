@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Blank </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <ion-refresher slot="fixed">
+    <ion-refresher-content> </ion-refresher-content>
+  </ion-refresher>
+
+  <cdk-virtual-scroll-viewport
+    itemSize="56"
+    minBufferPx="900"
+    maxBufferPx="1350"
+    class="ion-content-scroll-host"
+  >
+    <ion-list>
+      <ion-item
+        *cdkVirtualFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]"
+      >
+        <ion-avatar slot="start">
+          <img src="https://loremflickr.com/40/40" />
+        </ion-avatar>
+        <ion-label> Item number: {{item }} </ion-label>
+      </ion-item>
+    </ion-list>
+  </cdk-virtual-scroll-viewport>
+</ion-content>
